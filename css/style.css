@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Roboto:wght@400;700&family=Secular+One&family=Signika&display=swap');
+:root {
+    --color-bg : #35356b ;
+}
+html,body {
+    background-color: var(--color-bg);
+    font-family: 'inter', sans-serif ;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 41rem;
+    height: 59rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+header img {
+    width: 29rem;
+    display: flex;
+}
+hr {
+    width: 30rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-start;
+    line-height: 0.2rem;
+}
+.content h2 {
+    font-size: 4rem;
+    display: flex;
+    font-weight: bolder;
+    padding: 0 5rem 0 5rem;
+}
+.content p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font: 300;
+    padding: 0px 5rem 0 5rem;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15%;
+    padding: 0 5rem 0 0;
+}
+.btn button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .btn button {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+    border-radius: 1rem;
+  }
+  
+  .btn button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}  
+
+.comment {
+    display: flex;
+    width: 29rem;
+    height: 40rem;
+    background: #fafafa;
+    border-radius: 0 3rem 3rem 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+.co-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-direction: column;
+    align-content: center;
+}
+.comment header img {
+    display: flex;
+    width: 10rem;
+}
+.comment header h3 {
+    display: flex;
+    padding: 0 3rem;
+    font-size: 2rem;
+}
+.checked {
+  color: orange;
+}
+.stars {
+    display: flex;
+    top: 28rem;
+    left: 82rem;
+    font-size: 1.6rem;
+    align-items: flex-end;
+}
+.comment-content p {
+    display: flex;
+    padding: 0 2rem 0 2rem;
+}
