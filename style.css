@@ -29,6 +29,9 @@ header {
 header img {
     width: 29rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 hr {
     width: 30rem;

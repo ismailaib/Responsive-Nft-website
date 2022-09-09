@@ -1,0 +1,193 @@
+.card {
+    animation-name: example;
+    animation-duration: 10s;
+  }
+  
+  @keyframes example {
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 20;
+    }
+    50% {
+        opacity: 40;
+    }
+    75% {
+        opacity: 60;
+    }
+    100% {
+        opacity: 100;
+    }
+  }
+
+  .card img {
+    animation-name: img;
+    animation-duration: 4s;
+  }
+  
+  @keyframes img {
+    0% {
+        opacity: 10;
+        width: 0rem;
+    }
+    
+    25% {
+        opacity: 20;
+        width: 7.25rem;
+    }
+    50% {
+        opacity: 30;
+        width: 14.5rem;
+    }
+    75% {
+        opacity: 60;
+        width: 21.75rem;
+    }
+    100% {
+        opacity: 100;
+        width: 29rem;
+    }
+  }
+
+  /*   ********************* lorem *******************    */
+  .comment {
+    animation-name: comment;
+    animation-duration: 2s;
+  }
+  
+  @keyframes comment {
+    0% {
+        width: 0rem;
+    }
+    
+    25% {
+        width: 0rem;
+
+    }
+    50% {
+        width: 0rem;
+    }
+    75% {
+
+    }
+    100% {
+        width: 29rem;
+    }
+  }
+
+  .comment img {
+    animation-name: co-head;
+    animation-duration: 4s;
+  }
+  
+  @keyframes co-head {
+    0% {
+        width: 0rem;
+    }
+    
+    25% {
+        width: 0rem;
+
+    }
+    50% {
+        width: 0rem;
+    }
+    75% {
+
+    }
+    100% {
+        width: 10rem;
+    }
+  }
+
+  .comment .stars {
+    animation-name: stars;
+    animation-duration: 4s;
+  }
+  
+  @keyframes stars {
+    0% {
+
+font-size: 0rem;
+    }
+    
+    25% {
+
+        font-size: 0rem;
+
+    }
+    50% {
+
+font-size: 0rem;
+
+    }
+    75% {
+
+font-size: 0rem;
+
+    }
+    100% {
+
+font-size: 1.6rem;
+
+    }
+  }
+  .comment h3 {
+    animation-name: h3 ;
+    animation-duration: 4s;
+  }
+  
+  @keyframes h3  {
+    0% {
+font-size: 0;
+    }
+    
+    25% {
+        font-size: 0;
+
+
+    }
+    50% {
+        font-size: 0;
+
+    }
+    75% {
+        font-size: 0;
+
+    }
+    100% {
+        font-size: 2rem;
+
+    }
+  }
+
+   .comment-content {
+    animation-name: comment-content;
+    animation-duration: 4s;
+  }
+  
+  @keyframes comment-content {
+    0% {
+font-size: 0;
+    }
+    
+    25% {
+        font-size: 0;
+
+
+    }
+    50% {
+        font-size: 0;
+
+    }
+    75% {
+        font-size: 0;
+
+    }
+    100% {
+        font-size: 1rem;
+
+    }
+  }
