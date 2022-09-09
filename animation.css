@@ -24,7 +24,7 @@
 
   .card img {
     animation-name: img;
-    animation-duration: 4s;
+    animation-duration: 2s;
   }
   
   @keyframes img {
@@ -35,15 +35,15 @@
     
     25% {
         opacity: 20;
-        width: 7.25rem;
+        width: 0rem;
     }
     50% {
         opacity: 30;
-        width: 14.5rem;
+        width: 0rem;
     }
     75% {
         opacity: 60;
-        width: 21.75rem;
+        width: 0rem;
     }
     100% {
         opacity: 100;
