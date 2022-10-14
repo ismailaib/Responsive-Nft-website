@@ -1,28 +1,29 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter+Tight:wght@500&family=Inter:wght@900&family=Open+Sans&family=Roboto:wght@400;500&family=Rubik+Moonrocks&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(203, 71%, 60%);
-  --second-color: hsl(277, 56%, 68%);
-  --text-color: hsl(203, 8%, 98%);
+  --first-color: #B359DD;
+  --second-color: #FFB800;
+  --third-color: #07D0A0;
+  --text-color: #fff;
   --text-color-light: hsl(203, 8%, 80%);
-  --body-color: hsl(259, 20%, 18%);
+  --body-color: #171956;
+  --card-color: #070932;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Oxanium', cursive;
+  --body-font: 'Roboto', cursive;
   --biggest-font-size: 2.25rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
 
   /*========== Font weight ==========*/
-  --font-semi-bold: 600;
+  --font-semi-bold: 500;
 
   /*========== z index ==========*/
   --z-fixed: 100;
@@ -48,7 +49,7 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #171956;
+  background-color: var(--body-color);
   color: var(--text-color);
   user-select: none;
   overflow-x: hidden;
@@ -81,12 +82,12 @@ img {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(146, 202, 219); 
+  box-shadow: inset 0 0 5px var(--text-color-light); 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(158, 114, 179); 
+  background: var(--first-color); 
 }
 
 /* Handle on hover */
@@ -228,7 +229,7 @@ img {
 .home-shape-small{
   width: 21rem;
   height: 22rem;
-  background-color: rgb(255, 167, 5);
+  background-color: var(--second-color);
   top: 14.5rem;
   left: 5.5rem;
 }
@@ -237,7 +238,7 @@ img {
   position: fixed;
   width: 30rem;
   height: 250px;
-  background-color: rgb(166, 52, 236);
+  background-color: var(--first-color);
   top: 1rem;
   right: -6.5rem;
 }
@@ -324,7 +325,7 @@ img {
 }
 
 .hero-top-text {
-  color: #07D0A0;
+  color: var(--third-color);
 }
 
 .hero-title {
@@ -408,7 +409,7 @@ img {
   text-align: center;
   background-size: 300%;
   background: rgba(255, 255, 255, 0);
-  border: 3px solid #B359DD;
+  border: 3px solid var(--first-color);
   border-radius:10px;
   z-index: 1;
  }
@@ -427,8 +428,84 @@ img {
   }
  }
  
+ .cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 50% 50%;
+  padding: 4rem 0rem 4rem 0rem;
+}
 
+.cards .card {
+  display: grid;
+  width: 30rem;
+  height: 12rem;
+  background: var(--card-color);
+  position: relative;
+  max-width: 90%;
+}
 
+.line {
+  height: 7px;
+  background: linear-gradient(90deg,#07D0A0,#B359DD,#07D0A0,#B359DD);
+  background-size: 400% 400%;
+  animation: line 5s ease infinite ;
+}
 
+.card h4 , .card h2 {
+  display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
 
+.card h2 {
+   color: var(--text-color);
+   font-size: 2.5rem;
+}
 
+#t-1 {
+  color: var(--first-color);
+}
+
+#t-2 {
+  color: var(--third-color);
+}
+
+@keyframes line {
+  0% {
+    background-position: 0% 50%;
+   }
+   50% {
+    background-position: 100% 50%; 
+   }
+   100% {
+    background-position: 0% 50%;
+   }
+}
+@media screen and (max-width: 1000px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+}
+
+.trust {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 4rem 0 4rem 0;
+}
+
+ .trust h2{
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.trust p{
+  color: var(--third-color);
+}
