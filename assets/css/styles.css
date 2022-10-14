@@ -71,6 +71,7 @@ img {
   height: auto;
 }
 
+
 /* SKROLL BAR  */
 
 /* width */
@@ -149,6 +150,13 @@ img {
     transition: top .4s; 
     overflow: hidden;
    }
+   .btn {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 2rem;
+    justify-content: center;
+}
 }
 
 .nav-list{ 
@@ -205,6 +213,7 @@ img {
 /*=============== HOME ===============*/
 .home{ 
   position: relative; 
+  padding-top: 4rem;
 }
 
 /* Shapes */
@@ -306,11 +315,12 @@ img {
  text-align: start;
 }
 .home {
- margin-inline: 1.5rem;
-   display: grid;
-   align-items: center;
-   grid-template-columns: 40% 60%;
-   justify-items: center;
+  margin-inline: 1.5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50% 40%;
+  justify-items: center;
+  justify-content: center;
 }
 
 .hero-top-text {
@@ -343,33 +353,8 @@ img {
  width: 38rem;
 }
 
- 
-.btn {
-  color: #fff;
-  font-size: 9px;
-  font-weight: 500;
-  text-transform: uppercase;
-  min-width: 130px;
-  padding: 10px 15px;
-  border: 1px solid hsl(47, 100%, 45%);
-  border-radius: 4px;
-}
 
-.btn-primary {
-  background: hsl(47, 100%, 45%);;
-  color: rgb(27, 27, 27);
-}
 
-.btn-primary:is(:hover, :focus) { --golden-puppy: hsl(47, 100%, 45%); }
-
-.btn-secondary:is(:hover, :focus) { background: hsla(47, 100%, 45%, 0.1); }
-
-.btn-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
 
 /* For large devices */
 @media screen and (max-width: 1024px) {
@@ -380,19 +365,68 @@ img {
     grid-template-columns: 40% 60%;
     justify-items: center;
     flex-direction: column;
+    
 }
 .hero-content {
   text-align: center;
 }
+}
 .btn-group {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-  flex-direction: row;
-}
-}
 
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.btn-1 {
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  width: 10em;
+  height: 3.5em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg,#07D0A0,#B359DD,#07D0A0,#B359DD);
+  background-size: 300%;
+  border-radius: 10px;
+  z-index: 1;
+ }
+ .btn-2 {
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  width: 10em;
+  height: 3.5em;
+  line-height: 2em;
+  text-align: center;
+  background-size: 300%;
+  background: rgba(255, 255, 255, 0);
+  border: 3px solid #B359DD;
+  border-radius:10px;
+  z-index: 1;
+ }
+ .btn-1:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+ }
+ 
+ @keyframes ani {
+  0% {
+   background-position: 0%;
+  }
+ 
+  100% {
+   background-position: 400%;
+  }
+ }
+ 
 
 
 
