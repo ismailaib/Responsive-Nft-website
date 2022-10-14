@@ -247,7 +247,7 @@ img {
   position: fixed;
   width: 300px;
   height: 300px;
-  background-color: var(--first-color);
+  background-color: var(--third-color);
   bottom: -3.5rem;
   left: -3.5rem;
 }
@@ -508,4 +508,51 @@ img {
 
 .trust p{
   color: var(--third-color);
+}
+
+.trust-crds {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.crd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#crd-2 {
+  height: 16.5rem;
+}
+#crd-3 {
+  height: 9.5rem;
+}
+#crd-5 {
+  height: 7rem;
+}
+#crd-6 {
+  height: 12rem;
+}
+@media screen and (max-width: 1024px) {
+  .trust-crds {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trust-crds {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    gap: 7rem;
+  }
 }
