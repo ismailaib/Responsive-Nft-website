@@ -563,7 +563,7 @@ img {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  padding-right: 2rem;
+  padding: 0rem 2rem 4rem 0rem;
 }
 .secure-content{
   text-align: start;
@@ -575,6 +575,7 @@ img {
 }
 .secure-content p {
   padding-top: 1.5rem;
+  color: var(--third-color);
 }
 .ico {
   display: grid;
@@ -624,4 +625,24 @@ img {
   flex-direction: column;
   align-content: center;
 }
+}
+
+.built {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  align-items: center;
+}
+.built h2{
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.built p{
+  color: var(--third-color);
+}
+
+.built img{
+  max-width: 80%;
 }
