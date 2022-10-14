@@ -11,7 +11,7 @@
   --third-color: #07D0A0;
   --text-color: #fff;
   --text-color-light: hsl(203, 8%, 80%);
-  --body-color: #171956;
+  --body-color: #0d0e29;
   --card-color: #070932;
 
   /*========== Font and typography ==========*/
@@ -218,9 +218,12 @@ img {
 }
 
 /* Shapes */
-.home-shape-small,
 .home-shape-big-1,
-.home-shape-big-2{
+.home-shape-big-2,
+.home-shape-big-3,
+.home-shape-big-4,
+.home-shape-big-5,
+.home-shape-small{
   position: absolute;
   border-radius: 50%;
   filter: blur(13rem);
@@ -235,7 +238,7 @@ img {
 }
 
 .home-shape-big-1 {
-  position: fixed;
+  position: absolute;
   width: 30rem;
   height: 250px;
   background-color: var(--first-color);
@@ -244,11 +247,47 @@ img {
 }
 
 .home-shape-big-2{
-  position: fixed;
+  position: absolute;
   width: 300px;
   height: 300px;
   background-color: var(--third-color);
   bottom: -3.5rem;
+  left: -3.5rem;
+}
+
+.home-shape-big-2{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--third-color);
+  bottom: -3.5rem;
+  left: -3.5rem;
+}
+
+.home-shape-big-3{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--first-color);
+  bottom: -36.5rem;
+  left: 58.5rem;
+}
+
+.home-shape-big-4{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--second-color);
+  bottom: -83.5rem;
+  left: -3.5rem;
+}
+
+.home-shape-big-5{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--third-color);
+  bottom: -149.5rem;
   left: -3.5rem;
 }
 
@@ -508,6 +547,7 @@ img {
 
 .trust p{
   color: var(--third-color);
+  max-width: 35%;
 }
 
 .trust-crds {
@@ -633,6 +673,7 @@ img {
   gap: 3rem;
   text-align: center;
   align-items: center;
+  padding: 0rem 0 4rem 0rem;
 }
 .built h2{
   font-size: 3rem;
@@ -641,8 +682,77 @@ img {
 
 .built p{
   color: var(--third-color);
+  max-width: 35%;
 }
 
 .built img{
   max-width: 80%;
+}
+
+.advantage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0rem 0rem 5rem;
+  font-weight: 400;
+  gap: 1rem;
+}
+
+.content h2 {
+  font-size: 3rem;
+}
+
+.content-sub {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content-sub img {
+  max-width: 3rem;
+}
+.sub-1,
+.sub-2,
+.sub-3,
+.sub-4  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .advantage {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0rem 0rem 0rem; 
+  font-weight: 400;
+  gap: 1rem;
+}
+.content h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.content-sub {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
 }
