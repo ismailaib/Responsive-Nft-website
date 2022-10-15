@@ -1,0 +1,36 @@
+  .home-shape-small{
+    animation: small 8s ease-in-out infinite;
+  }
+  @keyframes small {
+    0% {
+        top: 14.5rem;
+        left: 5.5rem;
+    }
+    50% {
+        top: 0rem;
+        left: 12rem;
+        background-color: var(--first-color);
+    }
+    100% {
+        top: 14.5rem;
+        left: 5.5rem;
+    }
+  }
+  .home-shape-big-1 {
+    animation: big-1 8s ease-in-out infinite;
+  }
+  @keyframes big-1 {
+    0% {
+        top: 1rem;
+        right: -6.5rem;
+    }
+    50% {
+        top: 10rem;
+        right: 10rem;
+        background-color: var(--second-color);
+    }
+    100% {
+        top: 1rem;
+        right: -6.5rem;
+    }
+  }
